@@ -6,6 +6,36 @@
     <Grid RowDefinitions="Auto, *, *, Auto"
           ColumnDefinitions="*, *, *">
 
+        <!-- Welcome Message Overlay -->
+        <Grid x:Name="WelcomeGrid"
+              BackgroundColor="#80000000"
+              IsVisible="True"
+              Opacity="0"
+              Grid.RowSpan="4"
+              Grid.ColumnSpan="3">
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+                <Label Text="Welcome to Get Yakking"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="White" />
+
+                <Label Text="A brand new adult party game that helps you discover more about your friends! We have over 100 Yak cards and more to come. 'Yak' is a strange question or suggestion and these are designed to start funny, interesting, and downright weird conversations!"
+                       FontSize="16"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="Have Fun"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="White" />
+            </StackLayout>
+
+        </Grid>
+
         <!-- Rules Button at the top right -->
         <Button Text="Rules"
                 Grid.Row="0"
