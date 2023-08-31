@@ -19,22 +19,106 @@
                        FontSize="24"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
-                       TextColor="White" />
+                       TextColor="White" 
+                       Margin="0,10,10,0"/>
 
                 <Label Text="A brand new adult party game that helps you discover more about your friends! We have over 100 Yak cards and more to come. 'Yak' is a strange question or suggestion and these are designed to start funny, interesting, and downright weird conversations!"
                        FontSize="16"
                        HorizontalOptions="Center"
                        TextColor="White"
-                       HorizontalTextAlignment="Center" />
+                       HorizontalTextAlignment="Center" 
+                       Margin="120,10,120,0"/>
 
                 <Label Text="Have Fun"
                        FontSize="20"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
-                       TextColor="White" />
+                       TextColor="White" 
+                       Margin="0,10,10,0"/>
             </StackLayout>
 
         </Grid>
+        <!-- Message 2: Yak meets Yak -->
+        <Grid x:Name="WelcomeGrid2"
+      BackgroundColor="#80000000"
+      IsVisible="False"
+      Opacity="0"
+      Grid.RowSpan="4"
+      Grid.ColumnSpan="3">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+                <Label Text="Yak meets Yak"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="White" />
+                <Label Text="If you want to play Get Yakking with just two people it is possible! Each person takes a pile of cards and takes turns reading out the Yaks for the other player to answer. There is no winner in this game. It is all about getting to know each other. Any cards that begin with 'Which player' just answer the why section about the player."
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               Margin="120,10,120,0"/>
+            </StackLayout>
+        </Grid>
+
+        <!-- Message 3: Drunk Yaks (Age 18+) -->
+        <Grid x:Name="WelcomeGrid3"
+      BackgroundColor="#80000000"
+      IsVisible="False"
+      Opacity="0"
+      Grid.RowSpan="4"
+      Grid.ColumnSpan="3">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+                <Label Text="Drunk Yaks (Age 18+)"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="White" />
+                <Label Text="Drunk Yaks is played the same as normal Get Yakking with one exception. The player who Chief Yakker decides gave the worst answer to the Yak has to take a shot/drink. We recommend drinking responsibly as drunk yakking can be dangerous!"
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               Margin="120,10,120,0"/>
+            </StackLayout>
+        </Grid>
+
+        <!-- Message 4: Get Yakking Online -->
+        <Grid x:Name="WelcomeGrid4"
+      BackgroundColor="#80000000"
+      IsVisible="False"
+      Opacity="0"
+      Grid.RowSpan="4"
+      Grid.ColumnSpan="3">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+                <Label Text="Get Yakking Online"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="White" 
+               Margin="0,10,10,0"/>
+                <Label Text="Share some of the best answers using the hashtag "
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="White"
+               HorizontalTextAlignment="Center" 
+               Margin="120,10,120,0"/>
+                <Label Text="#GetYakking"
+               FontSize="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="White" 
+               Margin="120,10,120,0"/>
+                <Label Text="on social media. If you have created any great Yaks of your own, let us know by posting and @'ing us in the comments, your answer might be in the next edition!"
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="White"
+               HorizontalTextAlignment="Center" 
+               Margin="120,10,120,0" />
+            </StackLayout>
+            
+        </Grid>
+
+
 
         <!-- Rules Button at the top right -->
         <Button Text="Rules"
