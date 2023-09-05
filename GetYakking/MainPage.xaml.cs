@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
 
 namespace GetYakking
@@ -17,6 +16,16 @@ namespace GetYakking
             };
             VirtualCard.GestureRecognizers.Add(tapGestureRecognizer);
             FadeInWelcomeMessage();
+
+            // Add tap gesture recognizers to welcome grids to make them skippable
+            var skipIntroGesture = new TapGestureRecognizer();
+            skipIntroGesture.Tapped += (s, e) => {
+                SkipIntro();
+            };
+            WelcomeGrid.GestureRecognizers.Add(skipIntroGesture);
+            WelcomeGrid2.GestureRecognizers.Add(skipIntroGesture);
+            WelcomeGrid3.GestureRecognizers.Add(skipIntroGesture);
+            WelcomeGrid4.GestureRecognizers.Add(skipIntroGesture);
         }
 
         private void FlipCard()
@@ -34,7 +43,6 @@ namespace GetYakking
                 CardLabel.IsVisible = false;
             }
         }
-
 
         private async void FadeInWelcomeMessage()
         {
@@ -88,6 +96,16 @@ namespace GetYakking
             VirtualCard.IsVisible = false;
             WelcomeGrid.IsVisible = true;
             FadeInWelcomeMessage();
+        }
+
+        // New method to skip the intro
+        private void SkipIntro()
+        {
+            WelcomeGrid.IsVisible = false;
+            WelcomeGrid2.IsVisible = false;
+            WelcomeGrid3.IsVisible = false;
+            WelcomeGrid4.IsVisible = false;
+            VirtualCard.IsVisible = true;
         }
     }
 }
