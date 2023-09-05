@@ -2,15 +2,22 @@
 {
     public partial class MainPage : ContentPage
     {
+        private bool isCardFlipped = false;
         public MainPage()
         {
             InitializeComponent();
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += (s, e) => {
-                // Code to flip the card and reveal the "test placeholder"
+                FlipCard();
             };
             VirtualCard.GestureRecognizers.Add(tapGestureRecognizer);
             FadeInWelcomeMessage();
+        }
+
+        private void FlipCard()
+        {
+            isCardFlipped = !isCardFlipped;
+            CardLabel.Text = isCardFlipped ? "Back" : "Front";
         }
 
         private async void FadeInWelcomeMessage()

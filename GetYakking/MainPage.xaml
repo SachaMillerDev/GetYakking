@@ -132,8 +132,10 @@
               Grid.ColumnSpan="3"
               HorizontalOptions="Center"
               VerticalOptions="Center"
-              BackgroundColor="LightGray">
-            <Label Text="Test Placeholder"
+              BackgroundColor="LightGray"
+              IsVisible="False">
+            <Label x:Name="CardLabel"
+                   Text="Front"
                    VerticalOptions="Center"
                    HorizontalOptions="Center"/>
         </Grid>
@@ -147,13 +149,6 @@
                HeightRequest="100"
                WidthRequest="70"
                Aspect="AspectFit" />
-        <!-- Next Card Button at the bottom -->
-        <Button Text="Next Card"
-                Grid.Row="3"
-                Grid.ColumnSpan="3"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                Margin="0,0,0,10" />
 
     </Grid>
 </ContentPage>
