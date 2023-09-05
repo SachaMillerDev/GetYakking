@@ -1,4 +1,8 @@
-﻿namespace GetYakking
+﻿using System;
+using System.Threading.Tasks;
+using Microsoft.Maui.Controls;
+
+namespace GetYakking
 {
     public partial class MainPage : ContentPage
     {
@@ -58,12 +62,10 @@
             await Task.Delay(5000);
             await WelcomeGrid4.FadeTo(0, 2000);
             WelcomeGrid4.IsVisible = false;
-            // Added this line to go back to the first welcome message
-            FadeInWelcomeMessage();
         }
+
         private void ShowRules(object sender, EventArgs e)
         {
-            // Code to show the rules when the button is clicked
             WelcomeGrid.IsVisible = true;
             FadeInWelcomeMessage();
         }

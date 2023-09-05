@@ -129,27 +129,29 @@
 
         <!-- Virtual Card in the middle -->
         <Grid x:Name="VirtualCard"
-              Grid.Row="1"
-              Grid.ColumnSpan="3"
-              HorizontalOptions="Center"
-              VerticalOptions="Center"
-              BackgroundColor="LightGray"
-              IsVisible="False">
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            BackgroundColor="LightGray"
+            IsVisible="False"
+            HeightRequest="200"
+            WidthRequest="150">
             <Label x:Name="CardLabel"
-                   Text="Front"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"/>
+            Text="Front"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
         </Grid>
 
         <!-- Smaller window for the pile (already seen cards) -->
         <Image Source="C:\Users\SachaMiller\Downloads\yakking-card.png"
-               Grid.Row="2"
-               Grid.ColumnSpan="3"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               HeightRequest="100"
-               WidthRequest="70"
-               Aspect="AspectFit" />
+            Grid.Row="3"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            HeightRequest="100"
+            WidthRequest="70"
+            Aspect="AspectFit" />
 
     </Grid>
 </ContentPage>
