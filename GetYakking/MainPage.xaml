@@ -136,8 +136,8 @@
       BackgroundColor="LightGray"
       IsVisible="False"
       HeightRequest="300"
-      WidthRequest="200"
-      Margin="0,30,0,0">
+      WidthRequest="300"
+      Margin="0,120,0,0">
             <Image x:Name="CardImage"
            Source="C:\Users\SachaMiller\Downloads\yakking-card.png"
            IsVisible="True"
@@ -150,6 +150,7 @@
            VerticalOptions="Center"
            HorizontalOptions="Center"/>
         </Grid>
+
         <!-- Smaller window for the pile (already seen cards) -->
         <Image Source="C:\Users\SachaMiller\Downloads\yakking-card.png"
        Grid.Row="3"
@@ -159,7 +160,8 @@
        HeightRequest="100"
        WidthRequest="70"
        Aspect="AspectFit"
-       Margin="10"/>
+       Margin="10"
+       IsVisible="True"/>
 
     </Grid>
 </ContentPage>
