@@ -117,14 +117,15 @@
             </StackLayout>
             
         </Grid>
-
         <!-- Rules Button at the top right -->
-        <Button Text="Rules"
+        <Button x:Name="RulesButton"
+                Text="Rules"
                 Grid.Row="0"
                 Grid.Column="2"
                 HorizontalOptions="End"
                 VerticalOptions="Start"
-                Margin="0,10,10,0" />
+                Margin="0,10,10,0"
+                Clicked="ShowRules" />
 
         <!-- Virtual Card in the middle -->
         <Grid x:Name="VirtualCard"
@@ -141,7 +142,7 @@
         </Grid>
 
         <!-- Smaller window for the pile (already seen cards) -->
-        <Image Source="your_pile_image_here.png"
+        <Image Source="C:\Users\SachaMiller\Downloads\yakking-card.png"
                Grid.Row="2"
                Grid.ColumnSpan="3"
                HorizontalOptions="Center"
