@@ -118,8 +118,6 @@
             
         </Grid>
 
-
-
         <!-- Rules Button at the top right -->
         <Button Text="Rules"
                 Grid.Row="0"
@@ -128,13 +126,17 @@
                 VerticalOptions="Start"
                 Margin="0,10,10,0" />
 
-        <!-- Main window to show the card -->
-        <Image Source="your_card_image_here.png"
-               Grid.Row="1"
-               Grid.ColumnSpan="3"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Aspect="AspectFit" />
+        <!-- Virtual Card in the middle -->
+        <Grid x:Name="VirtualCard"
+              Grid.Row="1"
+              Grid.ColumnSpan="3"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              BackgroundColor="LightGray">
+            <Label Text="Test Placeholder"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+        </Grid>
 
         <!-- Smaller window for the pile (already seen cards) -->
         <Image Source="your_pile_image_here.png"
@@ -145,7 +147,6 @@
                HeightRequest="100"
                WidthRequest="70"
                Aspect="AspectFit" />
-
         <!-- Next Card Button at the bottom -->
         <Button Text="Next Card"
                 Grid.Row="3"
