@@ -22,11 +22,24 @@ namespace GetYakking
         private void FlipCard()
         {
             isCardFlipped = !isCardFlipped;
-            CardLabel.Text = isCardFlipped ? "Back" : "Front";
+            if (isCardFlipped)
+            {
+                CardImage.IsVisible = false;
+                CardLabel.IsVisible = true;
+                CardLabel.Text = "Back";
+            }
+            else
+            {
+                CardImage.IsVisible = true;
+                CardLabel.IsVisible = false;
+            }
         }
+
 
         private async void FadeInWelcomeMessage()
         {
+            VirtualCard.IsVisible = false;
+            WelcomeGrid.IsVisible = true;
             await WelcomeGrid.FadeTo(1, 2000);
             await Task.Delay(5000);
             await WelcomeGrid.FadeTo(0, 1000);
@@ -37,35 +50,42 @@ namespace GetYakking
 
         private async void FadeInWelcomeMessage2()
         {
+            VirtualCard.IsVisible = false;
             WelcomeGrid2.IsVisible = true;
             await WelcomeGrid2.FadeTo(1, 1000);
             await Task.Delay(5000);
             await WelcomeGrid2.FadeTo(0, 1000);
             WelcomeGrid2.IsVisible = false;
+            VirtualCard.IsVisible = true;
             FadeInWelcomeMessage3();
         }
 
         private async void FadeInWelcomeMessage3()
         {
+            VirtualCard.IsVisible = false;
             WelcomeGrid3.IsVisible = true;
             await WelcomeGrid3.FadeTo(1, 1000);
             await Task.Delay(5000);
             await WelcomeGrid3.FadeTo(0, 1000);
             WelcomeGrid3.IsVisible = false;
+            VirtualCard.IsVisible = true;
             FadeInWelcomeMessage4();
         }
 
         private async void FadeInWelcomeMessage4()
         {
+            VirtualCard.IsVisible = false;
             WelcomeGrid4.IsVisible = true;
             await WelcomeGrid4.FadeTo(1, 1000);
             await Task.Delay(5000);
             await WelcomeGrid4.FadeTo(0, 2000);
             WelcomeGrid4.IsVisible = false;
+            VirtualCard.IsVisible = true;
         }
 
         private void ShowRules(object sender, EventArgs e)
         {
+            VirtualCard.IsVisible = false;
             WelcomeGrid.IsVisible = true;
             FadeInWelcomeMessage();
         }
