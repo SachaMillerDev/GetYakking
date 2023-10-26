@@ -164,9 +164,4 @@
        IsVisible="True"/>
 
     </Grid>
-    
-    <Button Text="Original" Command="{Binding NavigateToOriginalGameCommand}" />
-    <Button Text="Couples" Command="{Binding NavigateToCouplesGameCommand}" />
-    <Button Text="Risky" Command="{Binding NavigateToRiskyGameCommand}" />
-    
 </ContentPage>

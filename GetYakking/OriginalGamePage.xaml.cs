@@ -28,6 +28,18 @@ public partial class MainPage : ContentPage
         WelcomeGrid4.GestureRecognizers.Add(skipIntroGesture);
     }
     // Add these lines
+    private void NavigateToOriginalGame()
+    {
+        Shell.Current.GoToAsync("//OriginalGamePage");
+    }
+    private void NavigateToCouplesGame()
+    {
+        Shell.Current.GoToAsync("//CouplesGamePage");
+    }
+    private void NavigateToRiskyGame()
+    {
+        Shell.Current.GoToAsync("//RiskyGamePage");
+    }
 
 
     private void FlipCard()
@@ -108,17 +120,5 @@ public partial class MainPage : ContentPage
         WelcomeGrid3.IsVisible = false;
         WelcomeGrid4.IsVisible = false;
         VirtualCard.IsVisible = true;
-    }
-    private void NavigateToOriginalGame()
-    {
-        Shell.Current.GoToAsync("//OriginalGamePage");
-    }
-    private void NavigateToCouplesGame()
-    {
-        Shell.Current.GoToAsync("//CouplesGamePage");
-    }
-    private void NavigateToRiskyGame()
-    {
-        Shell.Current.GoToAsync("//RiskyGamePage");
     }
 }

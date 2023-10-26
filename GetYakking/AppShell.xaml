@@ -11,4 +11,17 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <!-- Added lines -->
+    <ShellContent
+        Title="Original"
+        ContentTemplate="{DataTemplate local:OriginalGamePage}"
+        Route="OriginalGamePage" />
+    <ShellContent
+        Title="Couples"
+        ContentTemplate="{DataTemplate local:CouplesGamePage}"
+        Route="CouplesGamePage" />
+    <ShellContent
+        Title="Risky"
+        ContentTemplate="{DataTemplate local:RiskyGamePage}"
+        Route="RiskyGamePage" />
 </Shell>

@@ -52,4 +52,28 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="RiskyGamePage.xaml.cs">
+	    <DependentUpon>RiskyGamePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="CouplesGamePage.xaml.cs">
+	    <DependentUpon>CouplesGamePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="OriginalGamePage.xaml.cs">
+	    <DependentUpon>OriginalGamePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="RiskyGamePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CouplesGamePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="OriginalGamePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
